@@ -1,10 +1,18 @@
-Task 0 : Preprocessor </br >
-A script that runs a C file through the preprocessor and save the result into another file. </br >
-The C file name will be saved in the variable $CFILE</br >
-The output should be saved in the file c </br >
-</br >
-Task 1 : Compiler </br >
-The script compiles a C file but does not link and the output file is of the .o extension. </br >
-</br >
-Task 2 : Assembler </br >
-The script generates the assembly code of a C code and save it in an output file with a .s extension. </br >
+# Hello, World
+
+Project done during **Full Stack Software Engineering studies** at **ALX School**. The aim of the tasks is to understand the basics of the **C language** including how its compiled while also learning the basic commands i.e. printf, puts, write.
+
+## Files
+All of the following files are scripts and programs written in C:
+
+| Filename | Description |
+| -------- | ----------- |
+| `0-preprocessor` | Runs a C file through the preprocessor and saves the result into another file |
+| `1-compiler` | Compiles a C file but does not link |
+| `2-assembler` | Generates the assembly code of a C code and saves it in an output file |
+| `3-name` | Compiles a C file and creates an executable named `cisfun` |
+| `4-puts.c` | Prints exactly `"Programming is like building a multilingual puzzle"` |
+| `5-printf.c` | Prints exactly `with proper grammar, but the outcome is a piece of art` |
+| `6-size.c` | Prints the size of various types on the computer it is compiled |
+| `100-intel` | Generates the assembly code (Intel syntax) of a C code and save it in an output file |
+| `101-quote.c` | Prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19` |
