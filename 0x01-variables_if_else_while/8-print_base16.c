@@ -10,7 +10,7 @@ int main(void)
 	int hexint;
 	char hexalp;
 
-	for (hexint = 0; hexint <= '9' ; hexint++)
+	for (hexint = '0'; hexint <= '9' ; hexint++)
 	{
 		putchar(hexint);
 	}
