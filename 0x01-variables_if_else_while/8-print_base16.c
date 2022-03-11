@@ -13,12 +13,13 @@ int main(void)
 	for (hexint = '0'; hexint <= '9' ; hexint++)
 	{
 		putchar(hexint);
-	}
 
-	for (hexalp = 'a'; hexalp <= 'f'; hexalp++)
+	}
+	for (hexalp = 'a'; hexalp <= 'f' ; hexalp++)
 	{
 		putchar(hexalp);
-	} 
+	}
+
 	putchar('\n');
 
 	return (0);
