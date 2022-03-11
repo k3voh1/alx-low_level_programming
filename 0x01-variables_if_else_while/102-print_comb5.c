@@ -16,9 +16,9 @@ int main(void)
 	{
 		for (hunds = '0'; hunds <= '9'; hunds++)
 		{
-			for (tens = '0'; tens <= '9'; tens++)
+			for (tens = thous ; tens <= '9'; tens++)
 			{
-				for (ones = (tens + 1); ones <= '9'; ones++)
+				for (ones = (hunds + 1); ones <= '9'; ones++)
 				{
 					putchar(thous);
 					putchar(hunds);
@@ -31,6 +31,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
+				ones = '0';
 			}
 		}
 	}
