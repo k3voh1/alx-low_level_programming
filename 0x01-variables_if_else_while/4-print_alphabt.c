@@ -8,8 +8,8 @@
 int main(void)
 {
 	char alp;
+
 	alp = 'a';
-	
 	while (alp != 'q' && alp !='e')
 	{
 		putchar(alp);
