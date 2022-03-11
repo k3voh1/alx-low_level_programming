@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Print lower case letters
- * return: Always 0 (success)
+ *main - print lowercase a-z
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
 char alp = 'a';
