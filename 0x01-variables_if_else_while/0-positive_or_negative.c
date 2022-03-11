@@ -4,7 +4,7 @@
 #include <limits.h>
 
 /**
- *main - Determines if a number is positive, zero or negative
+ * main - Determines if a number is positive, zero or negative
  *
  * return: Always 0 (success)
  */
