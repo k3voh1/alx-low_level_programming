@@ -12,5 +12,5 @@ while (alp <= 'z')
 	putchar(alp);
 	alp++;
 }
-putchar('\n')
+putchar('\n');
 }
