@@ -25,7 +25,7 @@ int main(void)
 					putchar(' ');
 					putchar(tens);
 					putchar(ones);
-					if (!((tens == '9' && ones == '8') && (t == '9' && o == '9')))
+					if (!((thous == '9' && hunds == '8') && (tens == '9' && ones == '9')))
 					{
 						putchar(',');
 						putchar(' ');
