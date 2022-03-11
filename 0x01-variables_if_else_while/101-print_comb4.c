@@ -20,12 +20,12 @@ int main(void)
 				putchar(hunds);
 				putchar(tens);
 				putchar(ones);
+				if (hunds != '7')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-		}
-		if (hunds != '7' && tens != '8' && ones != '9')
-		{
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
