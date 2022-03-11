@@ -10,9 +10,12 @@ int main(void)
 	char alp;
 
 	alp = 'a';
-	while (alp != 'q' && alp != 'e')
+	while (alp <= 'z')
 	{
-		putchar(alp);
+		if (alp != 'e' && alp != 'q')
+		{
+			putchar(alp);
+		}
 		alp++;
 
 	}
