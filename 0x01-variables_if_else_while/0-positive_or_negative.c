@@ -4,7 +4,7 @@
 #include <limits.h>
 
 /**
- *main - Entry point
+ *main - Determines if a number is positive, zero or negative
  *
  * return: Always 0 (success)
  */
@@ -26,6 +26,5 @@ int main(void)
 	{
 	printf("%d is negative\n", n);
 	}
-
 	return (0);
 }
