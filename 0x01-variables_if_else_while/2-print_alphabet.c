@@ -7,10 +7,10 @@
 int main(void)
 {
 char alp = 'a';
-while (alp =< 26)
+while (alp =< 'z')
 {
 	putchar(alp);
 	alp++;
 }
-putchar("\n")
+putchar('\n')
 }
