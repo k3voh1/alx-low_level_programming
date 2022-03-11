@@ -8,9 +8,9 @@
 int main(void)
 {
 	int ones;
-	int tens;
+	int tens = '0';
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (; tens <= '9'; tens++)
 	{
 		for (ones = (tens + '1'); ones <= '9'; ones++)
 		{
