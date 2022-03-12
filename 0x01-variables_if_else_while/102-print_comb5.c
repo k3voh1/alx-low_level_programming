@@ -7,35 +7,28 @@
 
 int main(void)
 {
-	int thous;
-	int hunds;
-	int tens;
-	int ones;
+	int a;
+	int b;
 
-	for (thous = '0'; thous <= '9'; thous++)
+	for (a = 0; a < 100; a++)
 	{
-		for (hunds = '0'; hunds <= '9'; hunds++)
+		for (b = 0; b < 100; b++)
 		{
-			for (tens = thous; tens <= '9'; tens++)
+			if (a < b)
 			{
-				for (ones = hunds + 1; ones <= '9'; ones++)
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
+				putchar(' ');
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
+				if (a != 98 || b != 99)
 				{
-					putchar(thous);
-					putchar(hunds);
+					putchar(',');
 					putchar(' ');
-					putchar(tens);
-					putchar(ones);
-					if (!((thous == '9' && hunds == '8') && (tens == '9' && ones == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
-				ones = '0';
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
