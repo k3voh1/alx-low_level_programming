@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *_islower(int c) - prints 10 times the alphabet in lowercase
- *
- *return: 0
+ *_islower - prints 10 times the alphabet in lowercase
+ *@c: character to check
+ *Return: 1 if lowercase, 0 if not
  */
 
 int _islower(int c)
