@@ -2,7 +2,7 @@
 
 /**
  *_isalpha - checks for alphabetic character
- *@c - letter to be checked
+ *@c: letter to be checked
  *
  *Return: 1 id c is a letter, 0 otherwise
  */
