@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int putchar(void)
+int _putchar(void)
 {
 	_putchar('p');
 	_putchar('u');
