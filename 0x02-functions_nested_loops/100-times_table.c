@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *times_table - prints the 9 times table, starting with 0
- *
+ *print_times_table - print multiplication table up to n
+ *@n: integer argument
  *Return: void
  */
 
-void times_table(void)
+void print_times_table(int n)
 {
 	int row;
 	int column;
