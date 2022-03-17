@@ -18,12 +18,8 @@ void more_numbers(void)
 			if (r >= 10)
 			{
 				_putchar('0' + (r / 10));
-				_putchar('0' + (r % 10));
 			}
-			else
-			{
-				_putchar('0' + r);
-			}
+			_putchar('0' + (r % 10));
 			r++;
 		}
 		_putchar('\n');
