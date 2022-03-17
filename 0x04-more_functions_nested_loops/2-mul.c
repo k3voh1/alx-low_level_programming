@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * mul - multiplies two integers.
- * @a: integer arguement
- * @b: integer arguement
+ * @a: first integer
+ * @b: second integer
  * eturn: Always 0 (success)
  */
 
