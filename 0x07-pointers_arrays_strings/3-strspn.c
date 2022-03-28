@@ -21,11 +21,11 @@ unsigned int _strspn(char *s, char *accept)
 				accp++;
 				break;
 			}
+		}
 			if (*(s + i) == '\0' && *(s + i) != *(accept + j))
 			{
 				return (accp);
 			}
-		}
 	}
 	return (accp);
 }
