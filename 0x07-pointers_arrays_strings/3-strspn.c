@@ -6,26 +6,23 @@
  * @accept: accepted bytes
  * Return: number of accepted bytes
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
-	unsigned int accp = 0;
+	unsigned int i, j, bool;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
+		bool = 1;
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				accp++;
+				bool = 0;
 				break;
 			}
 		}
-			if (*(s + i) == '\0' && *(s + i) != *(accept + j))
-			{
-				return (accp);
-			}
+		if (bool == 1)
+			break;
 	}
-	return (accp);
+	return (i);
 }
