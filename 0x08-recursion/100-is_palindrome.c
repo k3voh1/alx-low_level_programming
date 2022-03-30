@@ -16,20 +16,17 @@ int _strlen(char *s)
 
 /**
  * compare - compares letters in the string s
- * @s: string to be checked
  * @beg: characters at the front
  * @end: characters at the rear
  * Return: 1 or 0
  */
 
-int compare(char *s, int beg, int end)
+int compare(char *beg, char *end)
 {
 	if (beg > end)
 		return (1);
-	else if (*(s + beg) == *(s + end))
-		return (compare(s, beg + 1, end - 1));
-	else if (*(s + beg) != *(s + end))
-		return (0);
+	else if (*beg == *end)
+		return (compare(beg + 1, end - 1));
 	else
 		return (0);
 }
@@ -44,5 +41,5 @@ int is_palindrome(char *s)
 {
 	int len = _strlen(s);
 
-	return (compare(s, *s, *(s + len - 1)));
+	return (compare(s, (s + len - 1)));
 }
