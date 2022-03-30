@@ -24,7 +24,7 @@ int _strlen(char *s)
 
 int compare(char *s, int beg, int end)
 {
-	if (*(s + beg) > *(s + end))
+	if (*(s + beg) >= *(s + end))
 		return (1);
 	else if (*(s + beg) == *(s + end))
 		return (compare(s, beg + 1, end - 1));
