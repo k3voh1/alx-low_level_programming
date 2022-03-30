@@ -28,6 +28,8 @@ int compare(char *s, int beg, int end)
 		return (1);
 	else if (*(s + beg) == *(s + end))
 		return (compare(s, beg + 1, end - 1));
+	else if (*(s + beg) != *(s + end))
+		return (0);
 	else
 		return (0);
 }
