@@ -11,7 +11,7 @@ int find_prime(int n, int divisor)
 {
 	if (n == divisor)
 		return (1);
-	else if (n % divisor == 0)
+	else if (n % divisor == 0 && n != divisor)
 		return (0);
 	else
 		return (find_prime(n, divisor + 1));
