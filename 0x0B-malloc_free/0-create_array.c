@@ -28,7 +28,7 @@ for (i = 0; i < size; i++)
 {
 ch[i] = c;
 }
-return(ch);
+return (ch);
 
 
 }
