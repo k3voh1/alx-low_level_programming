@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	int n = 0;
 	char *strc;
 
-	if (*(s1 + i) == '\0' || *(s2 + j) == '\0')
+	if (*(s1 + i) == '\0' && *(s2 + j) == '\0')
 	{
 		return (NULL);
 	}
