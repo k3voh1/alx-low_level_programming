@@ -16,19 +16,19 @@ unsigned int i;
 
 if (size == 0)
 {
-Return (NULL);
+return (NULL);
 }
 ch = malloc(sizeof(c) * size);
 
 if (ch == NULL)
 {
-Return (NULL);
+return (NULL);
 }
 for (i = 0; i < size; i++)
 {
 ch[i] = c;
 }
-Return(ch);
+return(ch);
 
 
 }
