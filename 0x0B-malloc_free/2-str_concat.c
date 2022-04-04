@@ -11,7 +11,9 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, n = 0;
+	int i = 0;
+	int j = 0;
+	int n = 0;
 	char *strc;
 
 	if (*(s1 + i) == '\0' || *(s2 + j) == '\0')
