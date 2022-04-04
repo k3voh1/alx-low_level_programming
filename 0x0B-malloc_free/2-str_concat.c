@@ -31,6 +31,9 @@ char *str_concat(char *s1, char *s2)
 	for (n = 0; n < i; n++)
 		*(strc + n) = *(s1 + n);
 	for (m = 0; m <= j; m++)
+	{
 		*(strc + n) = *(s2 + m);
+		n++;
+	}
 	return (strc);
 }
