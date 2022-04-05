@@ -1,67 +1,63 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
- * ch_free_grid - frees a 2 dimensional array.
- * @grid: multidimensional array of char.
- * @height: height of the array.
- *
- * Return: no return
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
-void ch_free_grid(char **grid, unsigned int height)
+
+int _strlen(char *s)
 {
-if (grid != NULL && height != 0)
-{
-for (; height > 0; height--)
-free(grid[height]);
-free(grid[height]);
-free(grid);
-}
+int len = 0;
+
+while (*s != '\0')
+len++, s++;
+
+return (len);
 }
 
 /**
- * strtow - splits a string into words.
- * @str: string.
- *
- * Return: pointer of an array of integers
+ * argstostr - concatenates all the arguments of your program
+ * @ac: argc
+ * @av: arguments
+ * Return: pointer to array
  */
-char **strtow(char *str)
-{
-char **aout;
-unsigned int c, height, i, j, a1;
 
-if (str == NULL || *str == '\0')
-return (NULL);
-for (c = height = 0; str[c] != '\0'; c++)
-if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
-height++;
-aout = malloc((height + 1) * sizeof(char *));
-if (aout == NULL || height == 0)
+char *argstostr(int ac, char **av)
 {
-free(aout);
+char *s;
+int len = 0, i, j, k = 0;
+
+if (ac == 0 || av == NULL) /* validate input */
 return (NULL);
+
+/* find length to malloc */
+for (i = 0; i < ac; i++)
+{
+len += _strlen(av[i]);
 }
-for (i = a1 = 0; i < height; i++)
+len += (ac + 1); /* add space for newlines and null terminator */
+
+/* allocate memory and free if error */
+s = malloc(len * sizeof(char));
+
+if (s == NULL)
 {
-for (c = a1; str[c] != '\0'; c++)
-{
-if (str[c] == ' ')
-a1++;
-if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
-{
-aout[i] = malloc((c - a1 + 2) * sizeof(char));
-if (aout[i] == NULL)
-{
-ch_free_grid(aout, i);
+free(s);
 return (NULL);
 }
-break;
+
+/* insert each arg into *str */
+for (i = 0; i < ac; i++)
+{
+for (j = 0; j < _strlen(av[i]); j++)
+{
+s[k++] = av[i][j];
 }
+s[k++] = '\n';
 }
-for (j = 0; a1 <= c; a1++, j++)
-aout[i][j] = str[a1];
-aout[i][j] = '\0';
-}
-aout[i] = NULL;
-return (aout);
+
+return (s);
 }
