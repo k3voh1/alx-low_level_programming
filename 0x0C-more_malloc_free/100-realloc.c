@@ -6,7 +6,7 @@
  * @ptr: pointer to the memory previously allocated
  * with a call to malloc: malloc(old_size)
  * @old_size: size, in bytes, of the allocated space for ptr
- * new_size: size, in bytes of the new memory block
+ * @new_size: size, in bytes of the new memory block
  * Return: pointer to the newly allocated size
  */
 
