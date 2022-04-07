@@ -3,15 +3,18 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * @b: int arg
+ * @b: number of bytes
  * Return: pointer to the allocated memory
+ * normal process termination with a status value of 98
+ * otherwise
  */
 
 void *malloc_checked(unsigned int b)
 {
-	int *p;
+	void *p;
 
 	p = malloc(b);
+
 	if (p == NULL)
 		exit(98);
 	return (p);
