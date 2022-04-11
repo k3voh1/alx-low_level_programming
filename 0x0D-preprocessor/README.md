@@ -1,4 +1,11 @@
-## 0x0D. C - Preprocessor ##
+# 0x0D. C - Preprocessor
+Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about how to include guard in the header files and macros in **C language**.
+
+## Technologies
+* C files are compiled using `gcc 4.8.4`
+* C files are written according to the C90 standard
+* Tested on Ubuntu 14.04 LTS
+
 File | Description
 ---------- | ----------
 `0-object_like_macro.h` | header file that defines a macro named SIZE as an abbreviation for the token 1024
