@@ -8,7 +8,8 @@ Project done during **Full Stack Software Engineering studies** at **ALX School*
 ## Files
 All of the following files are programs written in C:
 | Filename | Description |
-| -------- | ----------- | `dog.h` | Header file that contains a `struct dog` |
+| -------- | ----------- |
+| `dog.h` | Header file that contains a `struct dog` |
 | `1-init_dog.c` | Initialize a variable of type `struct dog` |
 | `2-print_dog.c` | Prints a `struct dog` |
 | `3-islower.c` | Checks for lowercase character |
