@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	b = (char *)main;
-	for (a = 0; a < byes; a++)
+	for (a = 0; a < bytes; a++)
 	{
 		if (a == bytes - 1)
 		{
