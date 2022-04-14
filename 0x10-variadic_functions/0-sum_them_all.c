@@ -3,7 +3,7 @@
 
 /**
  * sum_them_all -  returns the sum of all its parameters
- * @n: no og args
+ * @n: no of args
  * Return: sum of all args
  */
 
